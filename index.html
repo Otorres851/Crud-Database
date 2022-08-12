@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon Icon -->
+  <link href="https://uploads-ssl.webflow.com/610cd7653a09e982e0e10c54/610cd811e67dc778cdeebea8_untitled-ui-favicon.png"
+    rel="shortcut icon" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend | Document</title>
+</head>
+
+<body>
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="header-logo">
+        <a href="#">
+          <div>
+            <img src="https://uploads-ssl.webflow.com/610cd7653a09e982e0e10c54/61e94571ef14a40a3674ae28_Logomark.svg" />
+          </div>
+          <img
+            src="https://uploads-ssl.webflow.com/610cd7653a09e982e0e10c54/610d0e55e2c3de04e45b856f_untitled-ui-logotype.svg" />
+        </a>
+      </div>
+      <div class="header-navigation">
+        <nav class="header-navigation-links">
+          <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Dashboard </a></li>
+            <li><a href="#"> Projects </a></li>
+            <li><a href="#"> Tasks </a></li>
+            <li><a href="#"> Reporting </a></li>
+            <li><a href="#"> Users </a></li>
+          </ul>
+        </nav>
+        <div class="header-navigation-actions">
+          <a href="#" class="icon-button">
+            <span class="iconify" data-icon="octicon:search-16"></span>
+          </a>
+          <a href="#" class="icon-button">
+            <span class="iconify" data-icon="octicon:gear-24"></span>
+          </a>
+          <a href="#" class="icon-button">
+            <span class="iconify" data-icon="octicon:bell-16"></span>
+          </a>
+          <a href="#" class="avatar">
+            <img src="./avatars/avatar1.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <a href="#" class="button">
+        <span class="iconify" data-icon="ph:list-bold"></span>
+      </a>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Main Start-->
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="main-header">
+          <div class="main-header-intro">
+            <h1>Team members</h1>
+            <p>Manage your team members and their acount permissions here.</p>
+          </div>
+          <div class="main-header-actions">
+            <a href="#" class="button-a" id="add">
+              <span class="iconify" data-icon="akar-icons:plus"></span>
+              <span>Add team member</span>
+            </a>
+          </div>
+          <div class="horizontal-tabs">
+            <ul>
+              <li><a href="#" class="my-details">My details</a></li>
+              <li><a href="#" class="my-profile">Profile</a></li>
+              <li><a href="#" class="my-password">Password</a></li>
+              <li><a href="#" class="my-team">Team</a></li>
+              <li><a href="#" class="my-plan">Plan</a></li>
+              <li><a href="#" class="my-billing">Billing</a></li>
+              <li><a href="#" class="my-notifications">Notifications</a></li>
+              <li><a href="#" class="my-integrations">Integrations</a></li>
+              <li><a href="#" class="my-api">API</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-table row">
+          <div class="col-md-3 mb-4">
+            <div class="main-admin-body">
+              <h6>Admin users</h6>
+              <p>
+                Admins can add and remove users and manage organization-level settings.
+              </p>
+            </div>
+          </div>
+          <!-- Main Table -->
+          <div class="col-md-9 mb-4">
+            <div class="main-table-body">
+              <table class="table table-hover" id="table-list">
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="selectAll">
+                        <label for="selectAll"></label>
+                      </span>
+                    </th>
+                    <th class="name">Name</th>
+                    <th class="date-added">Date added</th>
+                    <th class="last-active">Last active</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                        <label for="checkbox1"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar1.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Olivia Rhye</p>
+                          <p class="user-email">olivia@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 14, 2022</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                        <label for="checkbox2"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar2.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Phoenix Baker</p>
+                          <p class="user-email">phoenix@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 12, 2022</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox3" name="options[]" value="1">
+                        <label for="checkbox3"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar3.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Lana Steiner</p>
+                          <p class="user-email">lana@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 12, 2022</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox4" name="options[]" value="1">
+                        <label for="checkbox4"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar5.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Demi wilkinson</p>
+                          <p class="user-email">demi@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 14, 2022</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                        <label for="checkbox5"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar4.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Candice Wu</p>
+                          <p class="user-email">olivia@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 13, 2022</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="main-table row">
+          <div class="col-md-3 mb-4">
+            <div class="main-admin-body">
+              <h6>Account users</h6>
+              <p>
+                Account users can asses an review risks, questionnaires, data leaks and
+                identify breaches.
+              </p>
+            </div>
+          </div>
+          <!-- Main Table -->
+          <div class="col-md-9 mb-4">
+            <div class="main-table-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="selectAll">
+                        <label for="selectAll"></label>
+                      </span>
+                    </th>
+                    <th class="name">Name</th>
+                    <th class="date-added">Date added</th>
+                    <th class="last-active">Last active</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                        <label for="checkbox1"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar6.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Nataly Craig</p>
+                          <p class="user-email">nataly@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 14, 2022</td>
+                    <td>
+                      <a href="#" class="delete" >
+                        <span class="iconify" title="Delete" data-icon="lucide:trash-2"></span>
+                      </a>
+
+                      <a href="#" class="edit" >
+                        <span class="iconify" title="Edit" data-icon="lucide:edit-2"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                        <label for="checkbox2"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar7.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Drew Cano</p>
+                          <p class="user-email">drew@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 12, 2022</td>
+                    <td>
+                      <a href="#" class="delete">
+                        <span class="iconify" title="Delete" data-icon="lucide:trash-2"></span>
+                      </a>
+
+                      <a href="#" class="edit">
+                        <span class="iconify"  title="Edit" data-icon="lucide:edit-2"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox3" name="options[]" value="1">
+                        <label for="checkbox3"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar8.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Orlando Diggs</p>
+                          <p class="user-email">orlando@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 12, 2022</td>
+                    <td>
+                      <a href="#" class="delete">
+                        <span class="iconify" title="Delete" data-icon="lucide:trash-2"></span>
+                      </a>
+
+                      <a href="#" class="edit">
+                        <span class="iconify"  title="Edit" data-icon="lucide:edit-2"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox4" name="options[]" value="1">
+                        <label for="checkbox4"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar9.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Andi Lane</p>
+                          <p class="user-email">andi@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 14, 2022</td>
+                    <td>
+                      <a href="#" class="delete">
+                        <span class="iconify" title="Delete" data-icon="lucide:trash-2"></span>
+                      </a>
+
+                      <a href="#" class="edit">
+                        <span class="iconify"  title="Edit" data-icon="lucide:edit-2"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                        <label for="checkbox5"></label>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-table">
+                        <a href="#">
+                          <img src="./avatars/avatar10.png" alt="" class="avatar-img" />
+                        </a>
+                        <div class="avatar-user ms-3">
+                          <p class="user-name">Kate Morrison</p>
+                          <p class="user-email">kate@untitledui.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="date">Feb 22, 2022</td>
+                    <td class="date">Mar 13, 2022</td>
+                    <td>
+                      <a href="#" class="delete">
+                        <span class="iconify" title="Delete" data-icon="lucide:trash-2"></span>
+                      </a>
+
+                      <a href="#" class="edit">
+                        <span class="iconify"  title="Edit" data-icon="lucide:edit-2"></span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Main End-->
+
+
+  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+  <!--Opticon-Icons And Jquery-->
+  <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <!-- Script JS -->
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
